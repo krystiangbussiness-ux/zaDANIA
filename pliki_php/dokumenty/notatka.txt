@@ -1,0 +1,1 @@
+Sprawdź nazwę, typ i rozmiar każdego elementu w tabeli.

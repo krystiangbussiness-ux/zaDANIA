@@ -1,0 +1,108 @@
+:root {
+    color-scheme: light;
+    color: #192735;
+    background: #f3f6f9;
+    font: 1rem/1.55 system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body { margin: 0; }
+
+main {
+    width: min(100% - 2rem, 70rem);
+    margin: 2.5rem auto;
+}
+
+a { color: #154d78; }
+
+h1, h2 { line-height: 1.18; }
+
+h1 { font-size: clamp(2rem, 5vw, 3rem); }
+
+h2 { font-size: 1.2rem; }
+
+.karta {
+    background: #fff;
+    border: 1px solid #d5dfe8;
+    border-radius: 12px;
+    padding: 1.4rem;
+    margin-bottom: 1.25rem;
+}
+
+.karta > h2:first-child { margin-top: 0; }
+
+.siatka {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
+    gap: 1rem;
+}
+
+.siatka .karta { margin: 0; }
+
+form, label {
+    display: grid;
+    gap: .45rem;
+}
+
+form { gap: .85rem; }
+
+label { font-weight: 600; }
+
+input, select, button {
+    min-width: 0;
+    font: inherit;
+    border-radius: 6px;
+}
+
+input, select {
+    width: 100%;
+    padding: .5rem .65rem;
+    background: #fff;
+    color: inherit;
+    border: 1px solid #879bab;
+}
+
+button {
+    justify-self: start;
+    border: 1px solid #154d78;
+    padding: .48rem .9rem;
+    background: #154d78;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover { background: #103c5e; }
+
+:focus-visible { outline: 3px solid #2876a6; outline-offset: 2px; }
+
+.wynik {
+    border-left: 3px solid #2876a6;
+    margin: .9rem 0 0;
+    padding: .55rem .7rem;
+    background: #eef6fb;
+    overflow-wrap: anywhere;
+}
+
+.blad { color: #8b2730; }
+
+.sukces { color: #1d6649; }
+
+.lista-projektow, .lista-ocen { padding-left: 1.4rem; }
+
+.lista-projektow li, .lista-ocen li { margin: .4rem 0; }
+
+.szyfr-uklad {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: .8rem;
+    align-items: end;
+}
+
+.szyfr-uklad output { margin: 0; min-height: 2.6rem; }
+
+@media (max-width: 420px) {
+    .szyfr-uklad { grid-template-columns: 1fr; }
+}
+
+.szyfr-uklad output { display: block; white-space: pre-wrap; }

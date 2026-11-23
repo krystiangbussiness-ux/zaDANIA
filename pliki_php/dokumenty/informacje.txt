@@ -1,0 +1,1 @@
+Projekt „Moje pliki” odczytuje zawartość katalogu dokumenty.

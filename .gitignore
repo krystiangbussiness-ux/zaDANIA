@@ -1,0 +1,5 @@
+/dziennik_ocen/dane/oceny.txt
+/pliki_php/dokumenty/*.txt
+!/pliki_php/dokumenty/informacje.txt
+!/pliki_php/dokumenty/notatka.txt
+!/pliki_php/dokumenty/zadanie.txt
