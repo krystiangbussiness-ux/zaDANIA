@@ -9,6 +9,7 @@ Skopiuj folder `zadania-php` do `C:\xampp\htdocs\`, uruchom Apache i otwórz [st
 | `funkcje_php` | 11 zadań z funkcji PHP |
 | `dziennik_ocen` | Formularz ocen i lista wpisów z `dane/oceny.txt` |
 | `pliki_php` | Lista elementów z katalogu `dokumenty` i formularz tworzenia plików `.txt` |
+| [`php_mysql_szkola`](php_mysql_szkola/) | Dziennik szkolny z bazą MySQL i formularzem dodawania uczniów |
 
 Zrzuty ćwiczeń interaktywnych z wynikiem 5/5 (100%) są dołączone do paczki ZIP.
 

@@ -1,0 +1,111 @@
+:root {
+    color-scheme: dark;
+    background-color: #29201b;
+    color: #f7efe9;
+    font: 1rem/1.55 system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body { margin: 0; }
+
+main {
+    width: min(100% - 2rem, 54rem);
+    margin: 2.5rem auto;
+}
+
+h1, h2, h3 { line-height: 1.2; }
+
+h1 { font-size: clamp(2rem, 6vw, 3.25rem); margin: 0 0 1rem; }
+
+h2 { font-size: 1.25rem; margin-top: 0; }
+
+h3 { font-size: 1.1rem; margin-bottom: .5rem; }
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .35rem 1.15rem;
+    margin-bottom: 1.45rem;
+}
+
+nav a { color: #f5cfa6; text-underline-offset: .25em; }
+nav a[aria-current] { color: #fff3dd; font-weight: 700; }
+
+.karta {
+    padding: clamp(1rem, 4vw, 1.75rem);
+    background: #342822;
+    border: 1px solid #6a5142;
+    border-radius: .8rem;
+}
+
+.wybor-klasy {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .55rem .8rem;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+.dodawanie {
+    display: grid;
+    gap: .4rem;
+    width: min(100%, 24rem);
+}
+
+.dodawanie label:not(:first-of-type) { margin-top: .5rem; }
+.dodawanie button { justify-self: start; margin-top: .6rem; }
+
+label { font-weight: 650; }
+
+select, input, button {
+    font: inherit;
+    border-radius: .35rem;
+    padding: .48rem .7rem;
+}
+
+select, input {
+    min-width: 0;
+    color: #fff5ec;
+    background: #261d18;
+    border: 1px solid #9a7a67;
+}
+
+button {
+    color: #29201b;
+    font-weight: 700;
+    background: #ffd097;
+    border: 1px solid #ffd097;
+    cursor: pointer;
+}
+
+button:hover { background: #ffe2ba; }
+
+:focus-visible { outline: 2px solid #ffdbad; outline-offset: 3px; }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: .8rem;
+}
+
+th, td {
+    border: 1px solid #8e7160;
+    padding: .5rem .65rem;
+    text-align: left;
+    overflow-wrap: anywhere;
+}
+
+th { background: #564034; }
+th:first-child, td:first-child { width: 1%; text-align: center; }
+th:last-child, td:last-child { text-align: right; }
+tbody tr:nth-child(even) { background: #2c221c; }
+
+.srednia { margin-bottom: 0; }
+.blad { color: #ffc3ae; }
+.sukces { color: #bcf4c9; }
+
+@media (max-width: 450px) {
+    th, td { padding: .38rem; }
+    main { margin-top: 1.25rem; }
+}

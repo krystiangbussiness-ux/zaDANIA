@@ -14,6 +14,7 @@
             <li><a href="funkcje_php/">Funkcje PHP</a></li>
             <li><a href="dziennik_ocen/">Dziennik ocen</a></li>
             <li><a href="pliki_php/">Moje pliki</a></li>
+            <li><a href="php_mysql_szkola/">Dziennik szkolny · PHP i MySQL</a></li>
         </ul>
     </nav>
 </main>
